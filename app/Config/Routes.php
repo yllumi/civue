@@ -7,7 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->group('pages', function ($subroutes) {
-    $subroutes->setNamespace('App\Controllers\Pages');
-    $subroutes->resource('{any}', ['only' => ['index']]);
-}, ['filter' => 'pages']);
+$routes->resource('dashboard/statistic', ['controller' => '\App\Pages\Dashboard\Statistic\PageAction']);
+$routes->resource('dashboard', ['controller' => '\App\Pages\Dashboard\PageAction']);
