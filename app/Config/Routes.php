@@ -7,5 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->resource('dashboard/statistic', ['controller' => '\App\Pages\Dashboard\Statistic\PageAction']);
-$routes->resource('dashboard', ['controller' => '\App\Pages\Dashboard\PageAction']);
+// $routes->resource('dashboard/statistic', ['controller' => '\App\Pages\Dashboard\Statistic\PageController']);
+// $routes->resource('dashboard', ['controller' => '\App\Pages\Dashboard\PageController']);
